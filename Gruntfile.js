@@ -17,6 +17,12 @@ module.exports = function (grunt) {
     /* assemble templating */
     assemble: {
       options: {
+        collections: [{
+          name: 'post',
+          sortby: 'posted',
+          sortorder: 'descending'
+        }],
+        helpers: './src/bonnet/helpers/**/*.js',
         layout: 'page.hbs',
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*'

@@ -4,5 +4,13 @@
   {{#markdown}} 
     {{> body}} 
   {{/markdown}}
+
+    <ul>
+    {{#withSort post 'data.posted'}}
+      {{#each this.pages }}
+      <li><a href="{{ replaceStr this.dest 'dist' '' }}">{{ this.data.title }}</a></li>
+      {{/each}}
+    {{/withSort}}
+    </ul>
   </div>
 {{>site-footer}}
