@@ -1,0 +1,20 @@
+{
+  "name": "assemble-blog-template",
+  "version": "0.0.1",
+  "description": "Assemble Blog Template for use alongside http://www.andismith.com/blog/2014/01/getting-started-with-assemble/",
+  "author": {
+    "name": "andismith",
+    "email": "andi.smith.uk@gmail.com",
+    "url": "http://www.andismith.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andismith/assemble-blog-template.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "assemble": "~0.4.35",
+    "grunt-contrib-connect": "~0.6.0"
+  }
+}
