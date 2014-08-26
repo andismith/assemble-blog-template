@@ -1,16 +1,15 @@
 {{>site-header}}
   <div class="page-content">
   <h2>{{ this.page.title }}</h2>
-  {{#markdown}} 
-    {{> body}} 
+  {{#markdown}}
+    {{> body}}
   {{/markdown}}
-
-    <ul>
+  <ul>
     {{#withSort post 'data.posted'}}
       {{#each this.pages }}
       <li><a href="{{ replaceStr this.dest 'dist' '' }}">{{ this.data.title }}</a></li>
       {{/each}}
     {{/withSort}}
-    </ul>
+  </ul>
   </div>
 {{>site-footer}}
