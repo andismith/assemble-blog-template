@@ -17,12 +17,12 @@ module.exports = function (grunt) {
     /* assemble templating */
     assemble: {
       options: {
-        collections: [{
-          name: 'post',
-          sortby: 'posted',
-          sortorder: 'descending'
-        }],
-        helpers: './src/bonnet/helpers/**/*.js',
+      	collections: [{
+      	    name: 'post',
+      	    sortby: 'posted',
+      	    sortorder: 'descending'
+      	  }],
+      	helpers: './src/bonnet/helpers/**/*.js',
         layout: 'page.hbs',
         layoutdir: './src/bonnet/layouts/',
         partials: './src/bonnet/partials/**/*'
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
           cwd: './src/content/',
           dest: './dist/',
           expand: true,
-          src: ['**/*.hbs', '!_pages/**/*.hbs']
+          src: ['**/*.hbs','**/*.md', '!_pages/**/*.hbs']
         }, {
           cwd: './src/content/_pages/',
           dest: './dist/',
